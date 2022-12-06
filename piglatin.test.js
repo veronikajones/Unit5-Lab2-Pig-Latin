@@ -1,10 +1,10 @@
 let piglatin = require("./piglatin");
 
 describe("translate function", () => {
-  test("Hello Word should make ellohay orldway", () => {
-    let testTranslate = piglatin.translate("Hello World");
+  test("Hello should make ellohay", () => {
+    let testTranslate = piglatin.translate("Hello");
 
-    expect(testTranslate).toBe("ellohay orldway");
+    expect(testTranslate).toBe("ellohay");
   });
 
   test("One should make oneway", () => {
@@ -20,7 +20,7 @@ describe("translate function", () => {
   });
 
   test("Iodine should make iodineway", () => {
-    let testTranslate = piglatin.translate("One");
+    let testTranslate = piglatin.translate("Iodine");
 
     expect(testTranslate).toBe("iodineway");
   });
@@ -49,15 +49,15 @@ describe("translate function", () => {
     expect(testTranslate).toBe("umbrellaway");
   });
 
-  test("Not inline should make otnay inlineway", () => {
-    let testTranslate = piglatin.translate("Not inline");
+  test("Nothing should make othingnay", () => {
+    let testTranslate = piglatin.translate("Nothing");
 
-    expect(testTranslate).toBe("otnay inlineway");
+    expect(testTranslate).toBe("othingnay");
   });
 
-  test("JSON should make sonjay", () => {
+  test("JSON should make onjsay", () => {
     let testTranslate = piglatin.translate("JSON");
 
-    expect(testTranslate).toBe("sonjay");
+    expect(testTranslate).toBe("onjsay");
   });
 });
