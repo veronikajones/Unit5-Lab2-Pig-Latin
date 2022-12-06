@@ -25,6 +25,18 @@ describe("translate function", () => {
     expect(testTranslate).toBe("iodineway");
   });
 
+  test("Tuck should make ucktay", () => {
+    let testTranslate = piglatin.translate("Tuck");
+
+    expect(testTranslate).toBe("ucktay");
+  });
+
+  test("Pick should make ickpay", () => {
+    let testTranslate = piglatin.translate("Pick");
+
+    expect(testTranslate).toBe("ickpay");
+  });
+
   test("Strawberry should make awberrystray", () => {
     let testTranslate = piglatin.translate("strawberry");
 
